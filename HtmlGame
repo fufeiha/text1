@@ -2,6 +2,7 @@
  <head> 
  	<meta charset="utf-8" /> 
  	<title>JS写的石头剪子布游戏 - 琼台博客</title>
+ 	//以上摘自网络搜索页面，某人博客
  	 <style type="text/css"> 
  	 div{margin:20px auto;padding:10px;border:2px solid #999;width:200px;background:#ffe;}
  	  div#cu{font-weight:bold;font-size:30px;height:40px;color:red;} 

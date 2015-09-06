@@ -27,72 +27,72 @@ body{background: gray}
 	</div>
 </div>	
 	<script type="text/javascript">	
-	var jiandao=
-	document.getElementById("jiandao");
-	jiandao.onclick=function(){
-	    document.getElementById("my-result").src="https://raw.githubusercontent.com/fufeiha/ife/master/2015_summer/asset/jiandao.jpg";
-	var computerResult=Math.random();
-	if (computerResult<0.33){
+	var a="https://raw.githubusercontent.com/fufeiha/ife/master/2015_summer/asset/shitou.jpg",
+	b="https://raw.githubusercontent.com/fufeiha/ife/master/2015_summer/asset/jiandao.jpg",
+	c="https://raw.githubusercontent.com/fufeiha/ife/master/2015_summer/asset/bu.jpg";
+	var game=new Array();
+	game[0]=document.getElementById("jiandao");
+	game[1]=document.getElementById("shitou");
+	game[2]=document.getElementById("bu");
+	game[3]=document.getElementById("myresult");
+	game[4]=document.getElementById("resulttext");
+	game[5]=document.getElementById("computerresult");
+	game[0].onclick=function(){
+	    game[3].src=b;
+	var computerresult=Math.random();
+	if (computerresult<0.33){
         //jiandao
-		document.getElementById("computer-result").src="https://raw.githubusercontent.com/fufeiha/ife/master/2015_summer/asset/jiandao.jpg";
-        document.getElementById("result-text").innerHTML="平局！";
+		game[5].src=b;
+        game[4].innerHTML="TIE！";
 }
-    else if (computerResult<0.67){
+    else if (computerresult<0.67){
         //shitou
-    	document.getElementById("computer-result").src="https://raw.githubusercontent.com/fufeiha/ife/master/2015_summer/asset/shitou.jpg";
-	    document.getElementById("result-text").innerHTML="你输了！"
+    	game[5].src=a;
+	    game[4].innerHTML="YOU LOSE！"
 }
     else {
         //bu
-    	document.getElementById("computer-result").src="https://raw.githubusercontent.com/fufeiha/ife/master/2015_summer/asset/bu.jpg";
-	    document.getElementById("result-text").innerHTML="你赢了！"
+    	game[5].src=c;
+	    game[4].innerHTML="YOU WIN！"
 }
 }
-</script>
-<script type="text/javascript">	
-	var shitou=
-	document.getElementById("shitou");
-	jiandao.onclick=function(){
-	    document.getElementById("my-result").src="https://raw.githubusercontent.com/fufeiha/ife/master/2015_summer/asset/shitou.jpg";
-	var computerResult=Math.random();
-	if (computerResult<0.33){
+game[1].onclick=function(){
+    game[3].src=a;
+    var computerresult=Math.random();
+	if (computerresult<0.33){
         //jiandao
-		document.getElementById("computer-result").src="https://raw.githubusercontent.com/fufeiha/ife/master/2015_summer/asset/jiandao.jpg";
-        document.getElementById("result-text").innerHTML="你赢了！";
+		game[5].src=a;
+        game[4].innerHTML="TIE！";
 }
-    else if (computerResult<0.67){
+    else if (computerresult<0.67){
         //shitou
-    	document.getElementById("computer-result").src="https://raw.githubusercontent.com/fufeiha/ife/master/2015_summer/asset/shitou.jpg";
-	    document.getElementById("result-text").innerHTML="平局！"
+    	game[5].src=c;
+	    game[4].innerHTML="YOU LOSE！"
 }
     else {
         //bu
-    	document.getElementById("computer-result").src="https://raw.githubusercontent.com/fufeiha/ife/master/2015_summer/asset/bu.jpg";
-	    document.getElementById("result-text").innerHTML="你输了！"
+    	game[5].src=b;
+	    game[4].innerHTML="YOU WIN！"
+}   
 }
-}
-</script>
-<script type="text/javascript">	
-	var bu=
-	document.getElementById("bu");
-	jiandao.onclick=function(){
-	    document.getElementById("my-result").src="https://raw.githubusercontent.com/fufeiha/ife/master/2015_summer/asset/bu.jpg";
-	var computerResult=Math.random();
-	if (computerResult<0.33){
+	game[2].onclick=function(){
+    game[3].src=c;
+    var computerresult=Math.random();
+    if (computerresult<0.33){
         //jiandao
-		document.getElementById("computer-result").src="https://raw.githubusercontent.com/fufeiha/ife/master/2015_summer/asset/jiandao.jpg";
-        document.getElementById("result-text").innerHTML="你输了！";
+		game[5].src=c;
+        game[4].innerHTML="TIE！";
 }
-    else if (computerResult<0.67){
+    else if (computerresult<0.67){
         //shitou
-    	document.getElementById("computer-result").src="https://raw.githubusercontent.com/fufeiha/ife/master/2015_summer/asset/shitou.jpg";
-	    document.getElementById("result-text").innerHTML="你赢了！"
+    	game[5].src=b;
+	    game[4].innerHTML="YOU LOSE！"
 }
     else {
         //bu
-    	document.getElementById("computer-result").src="https://raw.githubusercontent.com/fufeiha/ife/master/2015_summer/asset/bu.jpg";
-	    document.getElementById("result-text").innerHTML="平局！"
-}
+    	game[5].src=a;
+	    game[4].innerHTML="YOU WIN！"
+}   
 }
 </script>
 </body>
